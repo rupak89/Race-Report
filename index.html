@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCTOR REPORT</title>
+
+    <!-- CUSTOM CSSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FABICON -->
+    <link rel=icon href="medias/ecg.png" sizes="16x16" type="image/png">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+
+<body class="">
+
+
+
+    <!-- animation -->
+
+    <section></section>
+
+    <!-- animation -->
+
+
+
+    <h1 class="text-center fw-bold mb-4 text-success">: DOCTOR REPORT :</h1>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3 text-end">
+                <button type="button" class="btn btn-primary fs-4" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Tooltip on Total Reach">Reach <em class="fw-bold">3247</em>
+                    <i class="bi bi-question-circle-fill"></i>
+                </button>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="card text-dark bg-light mb-3">
+                    <div class="card-header">ACUTE OTISIS MEDIA</div>
+                    <div class="card-body">
+                        <div id="colchart_div" style="width: auto; height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="card text-dark bg-light mb-3">
+                    <div class="card-header">Topic A</div>
+                    <div class="card-body">
+                        <div id="colchart2_div" style="width: auto; height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3 text-end">
+                <button type="button" class="btn btn-primary fs-4" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Tooltip Gift Summary">Action <em class="fw-bold">3247</em> in 500 min
+                    <i class="bi bi-question-circle-fill"></i>
+                </button>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <p class="fw-bold">Gifts & Sample</p>
+                <div class="border border-1 p-3 rounded-3 shadow-sm bg-white">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="p-3 rounded-circle bg-success" style="width: fit-content;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                        class="bi bi-gift-fill text-white" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <p class=" fs-2 fw-bold mb-0 text-center">23</p>
+                                <p class="text-center">Gift Sent</p>
+                            </div>
+                            <div class="col-5">
+                                <button type="button" class="btn btn-outline-success mt-3" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">View Details</button>
+                            </div>
+                            <hr>
+                            <div class="col-3">
+                                <div class="p-3 rounded-circle bg-warning" style="width: fit-content;">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                        class="bi bi-boxes text-white" viewBox="0 0 16 16">
+                                        <path
+                                            d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <p class=" fs-2 fw-bold mb-0 text-center">65</p>
+                                <p class="text-center">Sample Sent</p>
+                            </div>
+                            <div class="col-5 ">
+                                <button type="button" class="btn btn-outline-warning mt-3" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2">
+                <p class="fw-bold">Show Card</p>
+                <div class="border border-1 p-3 rounded-3 shadow-sm bg-white" style="width: fit-content;">
+                    <div class="row">
+                        <div class="col-4 ms-auto">
+                            <div class="p-3 rounded-circle bg-danger" style="width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                    class="bi bi-signpost-split-fill text-white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7 16h2V6h5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.8 2.4A1 1 0 0 0 14 2H9v-.586a1 1 0 0 0-2 0V7H2a1 1 0 0 0-.8.4L.225 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4h5v5z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-8 text-center">
+                            <p class=" fs-2 fw-bold mb-0">30</p>
+                            <p class="fst-italic">Milestone Achieved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <p class="fw-bold">Usage Time Count</p>
+                <div class="border border-1 p-3 rounded-3 shadow-sm bg-white " style="width: fit-content;">
+                    <div class="row">
+                        <div class="col-4 ms-auto">
+                            <div class="p-3 rounded-circle bg-info" style="width: fit-content;">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                    class="bi bi-clock-fill text-white" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-8 text-center">
+                            <p class=" fs-2 fw-bold mb-0">51.5</p>
+                            <p class="fst-italic">Total Spent in Hours</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONVERSION -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3 text-end ">
+                <button type="button" class="btn btn-primary fs-4" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Tooltip Conversion">Conversion
+                    <i class="bi bi-question-circle-fill"></i>
+                </button>
+            </div>
+            <div class="col-auto">
+                <div class="rounded-3 border border-2 shadow-md p-3 bg-white">
+                    <h1 class="text-center text-secondary">KPI</h1>
+                    <i class="bi bi-speedometer fs-1 bg-success text-white px-2 py-1 rounded"></i>
+                    <em class="fs-1 fw-bold">50%</em>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="border border-2 shadow-md p-3 rounded-3">
+                    <h3 class="text-secondary text-decoration-underline">Relative Growth</h3>
+                    <div id="chart3_div" style="width: auto;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col offset-sm-0 offset-md-3">
+                <div class="card text-dark bg-light mb-3" style="width: fit-content;">
+                    <div class="card-header">
+                        <em>
+                            <i class="bi bi-bookmark-heart-fill text-primary"></i>
+                        </em>
+                        All Reviews & Ratings
+                    </div>
+                    <div class="card-body">
+                        <table class="table bg-white">
+                            <thead>
+                                <tr>
+                                    <th>Topic</th>
+                                    <th>Rating</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="">Clinical practice guideline following well....</td>
+                                    <td>
+                                        <div class="ratings"> <em class="product-rating">4.6</em><em>/5</em>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="">Well Designed Office</td>
+                                    <td>
+                                        <div class="ratings"> <em class="product-rating">4.5</em><em>/5</em>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ENGAGEMENT OPPORTUNITY -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3 text-end">
+                <button type="button" class="btn btn-primary fs-4" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Tooltip Engagement">Engagement Opportunity <em class="fw-bold">2000</em>
+                    <i class="bi bi-question-circle-fill"></i>
+                </button>
+            </div>
+            <div class="col-9">
+                <div class="card text-dark bg-light mb-3" style="width: 75%;">
+                    <div class=" card-header">
+                        <em>
+                            <i class="bi bi-file-earmark-excel-fill text-success fs-3"></i>
+                        </em>
+                        <em class="fs-3">Doctors Engaged</em>
+                        <button type="button" class="btn btn-success float-end">Download</button>
+                    </div>
+
+                    <div class="card-body">
+                        <table class="table bg-white">
+                            <thead>
+                                <tr>
+                                    <th>Sl</th>
+                                    <th>Name</th>
+                                    <th>Occupation</th>
+                                    <th>Speciality</th>
+                                    <th>BMDC</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Md. Shafiqul Islam</td>
+                                    <td>MBBS</td>
+                                    <td>Surgeon</td>
+                                    <td>45650</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Md. Rafiq Uddin</td>
+                                    <td>MBBS</td>
+                                    <td>Dentist</td>
+                                    <td>65421</td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>Md. Shafiqul Islam</td>
+                                    <td>MBBS</td>
+                                    <td>Surgeon</td>
+                                    <td>45650</td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>Md. Rafiq Uddin</td>
+                                    <td>MBBS</td>
+                                    <td>Dentist</td>
+                                    <td>65421</td>
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ENGAGEMENT OPPORTUNITY -->
+
+
+
+    <!-- MODAL -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL -->
+
+
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- GOOGLE CHART JS -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>

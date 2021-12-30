@@ -1,0 +1,40 @@
+.ratings {
+    padding: 5px;
+}
+
+.product-rating {
+    font-size: 50px
+}
+
+.stars i {
+    font-size: 18px;
+    color: #28a745
+}
+
+/* ANIMATION AREA */
+
+
+span {
+    position: fixed;
+    pointer-events: none;
+    background: #fff;
+    animation: animate 10s linear infinite;
+    z-index: -1;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1) translateY(-500%) rotate(360deg);
+      opacity: 0;
+    }
+  }
